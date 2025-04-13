@@ -1,96 +1,40 @@
-# YQuantum 2025 - Super Hash Function Challenge
+# YQuantum 2025: Superquantum Challenge
 
-> _"Quantum computations are the next frontier in securing blockchain with advanced proof-of-work." – Anonymous, probably_
+## Files
 
-Welcome to Superquantum challenge at **YQuantum 2025**! This repository houses resources and examples for developing a quantum-based hash function, as described in our challenge prompt. Below you’ll find instructions on how to use and navigate the materials, as well as details on submission and evaluation.
+* Quantum hashing code: `main.py` and `nature.ipynb`
+* Front-end app: `app.py` and `/public`
+* Requirements: `requirements.txt`
+* Report: `writeup.pdf`
 
-## Contents
+## Get Started
 
-1. [Challenge Description](#challenge-description)
-2. [Example Notebooks](#example-notebook)
-3. [Recommended Environment & Dependencies](#recommended-environment--dependencies)
-4. [Documentation & Write-up](#documentation--write-up)
-5. [Submission Guidelines](#submission-guidelines)
-6. [Evaluation Criteria](#evaluation-criteria)
-7. [License & Attribution](#license--attribution)
+```py
+# Install requirements 
+pip install -r requirements.txt
+# Run app
+python -m flask --app app run
+# Run main.py
+python main.py 'Quantum hashing!'
+```
 
----
+Output:
+```
+Hash of "Quantum hashing!":
+  * Base 2: 0000000110000100011000000010101100001100101110011101100010110111111001010000101001101011010100011001010001100100100100101100001000011010101101101101000011110101111100010000101010100101010110100100001101111000110000101111000001010100000100100001001000100011
+  * Base 10: 686200389401212040221455499146774065590495791561769778809310574733018927651
+  * Base 16: 184602b0cb9d8b7e50a6b51946492c21ab6d0f5f10aa55a4378c2f054121223
+```
 
-## Challenge Description
+## Demo
 
-The heart of this repository is the **[challenge.md](challenge.md)** file. It details the goal of the challenge and provides the necessary information for you to understand the problem.
+![d](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/images/demo.png)
 
----
+## Results
 
-## Example Notebook
 
-This repository provides an example Jupyter notebook **[example.ipynb](example.ipynb)**. It provides an example quantum hash function and analyzes it based on our judging criteria.
 
----
 
-## Qhash implementaion
 
-We also provide a simplified implementation of the Qubitcoin's hash algorithm in the **[qhash.py](qhash.py)** (which we internally call qhash) for you to analyze. This implementation lacks the post-simulation classical hashing present in the blockchain to make it more in line with the challenge requirements. However, it only accepts 256-bit inputs, which would make it not eligible as a challenge solution.
 
----
 
-## Recommended Environment & Dependencies
-
-`example.ipynb` and `qhash.py` require the following dependencies to be run locally:
-
-- [qiskit](https://pypi.org/project/qiskit/)
-- [numpy](https://pypi.org/project/numpy/)
-
----
-
-## Documentation & Write-up
-
-A well-documented solution is key:
-
-- **Code Documentation**: Add docstrings and inline comments explaining your logic, especially where the quantum portion is crucial (i.e., the “hashing” circuit).
-- **Write-up**: Provide a `writeup.pdf` (or an equivalent Markdown/LaTeX file) detailing your approach:
-
-  - Explanation of your circuit design.
-  - Performance and quality analysis of your output.
-  - Rationale for how your function meets the challenge requirements.
-
-  **Optionally**:
-
-  - Analysis of the Qubitcoin's hash algorithm.
-
----
-
-## Submission Guidelines
-
-To submit your final project:
-
-1. **Include Source Code**:  
-   Place your core hashing function in the `main.py` that takes `bytes` as input and returns `bytes` as output.
-
-2. **Include Documentation**:
-   Provide a `writeup.pdf` summarizing your design, plus a brief presentation (`presentation.pptx`).
-
-3. **Include Examples**:  
-   Demonstrate, in a separate notebook or Python script, how you tested your hashing function’s performance (time, uniformity, etc.).
-
----
-
-## Evaluation Criteria
-
-Submissions will be judged according to the criteria outlined in `challenge.md`:
-
-1. **Output determinism**
-2. **Entropy Preservation**
-3. **Computational Difficulty**
-4. **Preimage & Collision Resistance**
-5. **Feasibility** – Not exceeding 20 qubits for up to 256-bit inputs.
-6. **Speed** – Reasonable execution times.
-7. **Purely Quantum Hashing** – No offloading to classical hash functions.
-
-Additional points (a lot of them) may be awarded for thorough proofs or analyses of your function, and the corresponding analysis of the Qubitcoin's hash algorithm.
-
----
-
-## License & Attribution
-
-All files in this repository, including the notebooks and challenge materials, are distributed for educational purposes.

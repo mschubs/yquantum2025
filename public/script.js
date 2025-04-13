@@ -4,6 +4,7 @@ let LIVE_1 = 2
 document.addEventListener("DOMContentLoaded", () => {
     const textInput = document.getElementById("input")
     const hashOutput = document.getElementById("hash")
+    const hashTenOutput = document.getElementById("hash-base-10")
 
     const copyButton = document.getElementById("copy")
     const copyToolTip = document.getElementById("copy-tooltip")
@@ -38,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }).then((res) => {
                 return res.json()
             }).then((data) => {
-                hashOutput.value = data.output
+                hashOutput.value = data.hex
+                hashTenOutput.innerText = `Base 10: ${data.dec}`
             }).catch((error) => {
                 console.log(error)
             })
@@ -71,7 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }).then((res) => {
             return res.json()
         }).then((data) => {
-            hashOutput.value = data.output
+            hashOutput.value = data.hex
+            hashTenOutput.innerText = `Base 10: ${data.dec}`
         }).catch((error) => {
             console.log(error)
         })

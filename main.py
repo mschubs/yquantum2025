@@ -1,9 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import qutip as qt
+import sys
 
 # Parameters
-N = 33  # number of vertices on the cycle
+N = 32  # number of vertices on the cycle
 tau_values = { '0': 0, '1': 2 }  # liveliness parameters for binary bits (example)
 coin_dim = 3
 
@@ -51,14 +52,24 @@ def to_binary(text):
 
 def hash(text, live_0 = 0, live_1 = 2):
     message = to_binary(text)
-    print(message)
     global tau_values
     tau_values = { "0": live_0, "1": live_1 }
     # Initial state defined previously (psi0)
     psi_final = controlled_quantum_walk_hash(message, N, psi0, tau_values)
-    print(psi_final)
     # Generate hash value (with parameters s=8, l=10 as an example)
     hash_value = generate_hash(psi_final, N, s=8, l=10)
-    print(hash_value)
-    #print("Hash value:", hash_value)
-    return hex(int(hash_value, 2))[2:]
+    return {
+        "bin": hash_value,
+        "dec": int(hash_value, 2),
+        "hex": hex(int(hash_value, 2))[2:]
+    }
+
+if __name__ == "__main__":
+    try:
+        res = hash(sys.argv[1], 0, 2)
+        print(f"Hash of \"{sys.argv[1]}\":")
+        print("  * Base 2:", res["bin"])
+        print("  * Base 10:", res["dec"])
+        print("  * Base 16:", res["hex"])
+    except Exception as e:
+        print("Error", e)
