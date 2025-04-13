@@ -5,7 +5,8 @@
 * Quantum hashing code: [`main.py`](https://github.com/mschubs/yquantum2025/blob/main/main.py) and [`nature.ipynb`](https://github.com/mschubs/yquantum2025/blob/main/nature.ipynb)
 * Front-end app: [`app.py`](https://github.com/mschubs/yquantum2025/blob/main/app.py) and [`/public`](https://github.com/mschubs/yquantum2025/tree/main/public)
 * Requirements: [`requirements.txt`](https://github.com/mschubs/yquantum2025/blob/main/requirements.txt)
-* Report: [`writeup.pdf`](link)
+* Report: [`writeup.pdf`](https://github.com/mschubs/yquantum2025/blob/main/writeup.pdf)
+* Presentation: [`presentation.pdf](https://github.com/mschubs/yquantum2025/blob/main/presentation.pdf)
 
 ## Get Started
 
