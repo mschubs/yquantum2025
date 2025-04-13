@@ -2,10 +2,10 @@
 
 ## Files
 
-* Quantum hashing code: `main.py` and `nature.ipynb`
-* Front-end app: `app.py` and `/public`
-* Requirements: `requirements.txt`
-* Report: `writeup.pdf`
+* Quantum hashing code: [`main.py`](https://github.com/mschubs/yquantum2025/blob/main/main.py) and [`nature.ipynb`](https://github.com/mschubs/yquantum2025/blob/main/nature.ipynb)
+* Front-end app: [`app.py`](https://github.com/mschubs/yquantum2025/blob/main/app.py) and [`/public`](https://github.com/mschubs/yquantum2025/tree/main/public)
+* Requirements: [`requirements.txt`](https://github.com/mschubs/yquantum2025/blob/main/requirements.txt)
+* Report: [`writeup.pdf`](link)
 
 ## Get Started
 
@@ -28,11 +28,20 @@ Hash of "Quantum hashing!":
 
 ## Demo
 
-![demo](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/demo.png))
+![demo](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/demo.png)
 
 ## Results
 
+### Preservation of Entropy
+Comparison of the input and output distributions:
+![result 1](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-1.png)
 
+### Computation Time
+![result 2](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-2.png)
+
+### Preimage Resistance
+Measuring difference between the hashed output and the input message (bits converted to integers):
+![result 3](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-3.png)
 
 
 
