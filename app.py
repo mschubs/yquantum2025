@@ -21,11 +21,10 @@ def handle_hash():
         if not data:
             return jsonify({ "error": "Invalid JSON" }), 400
         text = data.get("text")
-        live_0 = data.get("live_0")
-        live_1 = data.get("live_1")
+        live_0 = int(data.get("live_0"))
+        live_1 = int(data.get("live_1"))
         output = hash(text, live_0, live_1)
         return jsonify(output), 200
     except Exception as e:
-        print(e)
         return jsonify({ "error": "Error" }), 400
 
