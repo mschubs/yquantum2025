@@ -6,7 +6,7 @@
 * Front-end app: [`app.py`](https://github.com/mschubs/yquantum2025/blob/main/app.py) and [`/public`](https://github.com/mschubs/yquantum2025/tree/main/public)
 * Requirements: [`requirements.txt`](https://github.com/mschubs/yquantum2025/blob/main/requirements.txt)
 * Report: [`writeup.pdf`](https://github.com/mschubs/yquantum2025/blob/main/writeup.pdf)
-* Presentation: [`presentation.pdf`](https://github.com/mschubs/yquantum2025/blob/main/presentation.pdf)
+* Presentation: [`presentation.pdf`](https://github.com/mschubs/yquantum2025/blob/main/presentation.pdf) and [`presentation.pptx`](https://github.com/mschubs/yquantum2025/blob/main/presentation.pptx)
 
 ## Get Started
 
