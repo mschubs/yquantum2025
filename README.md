@@ -35,12 +35,12 @@ Hash of "Quantum hashing!":
 ### Preservation of Entropy
 Comparison of the input and output distributions:
 <p align = "center">
-   <img src="https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-1.png" width = "50%" />
+   <img src="https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-1.png" width = "100%" />
 </p>
 
 ### Computation Time
 <p align = "center">
-   <img src="https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-2.png" width = "50%" />
+   <img src="https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-2.png" width = "80%" />
 </p>
 
 ### Preimage Resistance
