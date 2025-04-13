@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width">
+	<title>Quantum Hash</title>
+	<link href = "style.css" rel = "stylesheet" type = "text/css" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+    <script src = "script.js"></script>
+</head>
+
+<body>
+    <div class = "center">
+        <div id = "container">
+            <div id = "title">
+                <div id = "title-logo">#</div>
+                Quantum Hash
+            </div>
+            <div id = "subtitle">
+                Built upon: "Quantum hash function based on controlled alternate lively quantum walks" (Hou et al., 2023)
+                <a href = "https://www.nature.com/articles/s41598-023-33119-w" target = "_blank"><img src = "images/nature-logo.svg" id = "subtitle-logo" /></a>
+            </div>
+            
+            <div class = "input-container">
+                <div class = "hash-label">Enter text: </div>
+                <input id = "input" />
+                <div id = "generate" class = "hash-btn" title = "Generate">
+                    <div id = "generate-icon" class="lnr lnr-sync"></div>
+                </div>
+            </div>
+            <div id = "customize-container">
+                <div class = "length-container">
+                    <div class = "length-title">Liveliness parameter (0 &leq; 𝜏 &leq; 4) for "0":</div>
+                    <div class = "range-container">
+                        <input id = "range-input-zero" type = "number" min = "0" max = "4" value = "0" />
+                        <input id = "range-slider-zero" type = "range" min = "0" max = "4" value = "0" />
+                    </div>
+                </div>
+                <div class = "length-container">
+                    <div class = "length-title">Liveliness parameter (0 &leq; 𝜏 &leq; 4) for "1":</div>
+                    <div class = "range-container">
+                        <input id = "range-input-one" type = "number" min = "0" max = "4" value = "2" />
+                        <input id = "range-slider-one" type = "range" min = "0" max = "4" value = "2" />
+                    </div>
+                </div>
+            </div>
+            <div class = "hash-container">
+                <div class = "hash-label">Hash</div>
+                <input id = "hash" disabled />
+                <div id = "copy" class = "hash-btn tooltip">
+                    <div id = "copy-icon" class="lnr lnr-file-empty"></div>
+                    <div id = "copy-tooltip" class = "tooltiptext"></div>
+                </div>
+            </div>
+            <div id = "hash-base-10">Base 10: </div>
+        </div>
+    </div>
+</body>
+
+</html>

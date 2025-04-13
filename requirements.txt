@@ -1,0 +1,4 @@
+qutip==5.1.1
+numpy==1.26.4
+flask==2.2.5
+flask-cors==5.0.1
