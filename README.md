@@ -28,7 +28,7 @@ Hash of "Quantum hashing!":
 
 ## Demo
 
-![d](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/images/demo.png)
+![demo](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/demo.png))
 
 ## Results
 
