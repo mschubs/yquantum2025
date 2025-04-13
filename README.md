@@ -34,14 +34,20 @@ Hash of "Quantum hashing!":
 
 ### Preservation of Entropy
 Comparison of the input and output distributions:
-![result 1](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-1.png)
+<p align = "center">
+   <img src="https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-1.png" width = "50%" />
+</p>
 
 ### Computation Time
-![result 2](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-2.png)
+<p align = "center">
+   <img src="https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-2.png" width = "50%" />
+</p>
 
 ### Preimage Resistance
 Measuring difference between the hashed output and the input message (bits converted to integers):
-![result 3](https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-3.png)
+<p align = "center">
+   <img src="https://raw.githubusercontent.com/mschubs/yquantum2025/refs/heads/main/public/images/result-3.png" width = "50%" />
+</p>
 
 
 
